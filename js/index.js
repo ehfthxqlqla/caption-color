@@ -31,5 +31,5 @@ colorPickInput.addEventListener("input", function(e) {
 })
 
 const share = () => {
-    navigator.clipboard.writeText(`${window.location.href}?color=${color.replace("#", "")}`).then(() => {alert(`성공!`)})
+    navigator.clipboard.writeText(`https://ehfthxqlqla.github.io/caption-color/?color=${color.replace("#", "")}`).then(() => {alert(`성공!`)})
 }
