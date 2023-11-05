@@ -6,6 +6,7 @@ colorInQuery = new URLSearchParams(window.location.search)
 let color = ``
 
 caption.style.color = `#${colorInQuery.get("color")}`
+color = `#${colorInQuery.get("color")}`
 
 if (!colorInQuery.get("color")) {
     color = `#ffffff`
