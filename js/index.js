@@ -32,5 +32,5 @@ colorPickInput.addEventListener("input", function(e) {
 })
 
 const share = () => {
-    navigator.clipboard.writeText(`https://ehfthxqlqla.github.io/caption-color/?color=${color.replace("#", "")}`).then(() => {alert(`성공!`)})
+    navigator.clipboard.writeText(`https://ehfthxqlqla.github.io/caption-color/?color=${color.replace("#", "")}`).then(() => {alert(`성공!`)}) # 진짜 존나 길다
 }
