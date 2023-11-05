@@ -3,10 +3,10 @@ ctxMenu =  document.querySelector(".context"),
 colorPickInput = document.querySelector("#colorpick"),
 colorInQuery = new URLSearchParams(window.location.search)
 
-let color = ``
+let color = ``;
 
-caption.style.color = `#${colorInQuery.get("color")}`
-color = `#${colorInQuery.get("color")}`
+caption.style.color = `#${colorInQuery.get("color")}`;
+let color = `#${colorInQuery.get("color")}`;
 
 if (!colorInQuery.get("color")) {
     color = `#ffffff`
@@ -32,5 +32,5 @@ colorPickInput.addEventListener("input", function(e) {
 })
 
 const share = () => {
-    navigator.clipboard.writeText(`https://ehfthxqlqla.github.io/caption-color/?color=${color.replace("#", "")}`).then(() => {alert(`성공!`)}) # 진짜 존나 길다
+    navigator.clipboard.writeText(`https://ehfthxqlqla.github.io/caption-color/?color=${color.replace("#", "")}`).then(() => {alert(`성공!`)})
 }
